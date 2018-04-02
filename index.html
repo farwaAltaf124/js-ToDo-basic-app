@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+var config = {
+  apiKey: "AIzaSyA92kth8uPMYVMl6L3BDya91rAwEOCqTo8",
+  authDomain: "todo-database-3e84f.firebaseapp.com",
+  databaseURL: "https://todo-database-3e84f.firebaseio.com",
+  projectId: "todo-database-3e84f",
+  storageBucket: "todo-database-3e84f.appspot.com",
+  messagingSenderId: "894938701801"
+};
+firebase.initializeApp(config);
+</script>
+<title> My ToDo App</title>
+</head>
+<body>
+    <h1>ToDo APP</h1>
+    <div class="main">
+<h2>Things To Do:</h2>
+<input type="text" id="myInput" placeholder="type here"> 
+
+</div>
+<div class="events">
+  <button onclick="add()" id="submit" aria-placeholder="write here..." >Submit</button>
+  <!-- <button onclick="dlt()">Delete items</button>-->
+    </div>
+    <hr>
+    <div>
+<div id="one">
+        <h2>ToDo Tasks</h2>
+        <ol id="item">
+            <span class="task" id="add_task"></span>
+            <!-- <span class="task" id="delete"></span> -->
+        </ol>
+        </div>
+        <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
